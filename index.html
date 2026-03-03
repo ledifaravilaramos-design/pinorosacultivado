@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa del Piñón | Identidad Natural</title>
+    <!-- Framework de diseño: Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconografía: Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Montserrat:wght@200;400;600&display=swap');
+
+        :root {
+            --pine-rose: #D9A1A1;      /* Color Rosa del Piñón */
+            --pine-deep: #1A261D;      /* Verde Bosque */
+            --pine-earth: #8C7356;     /* Tono Tierra/Madera */
+            --pine-cream: #FDFBFA;     /* Fondo Orgánico */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--pine-cream);
+            color: var(--pine-deep);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+
+        .text-rose { color: var(--pine-rose); }
+        .bg-rose { background-color: var(--pine-rose); }
+        
+        .img-wrap {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2rem;
+            background-color: #f3f3f3; 
+        }
+
+        .img-wrap img {
+            transition: transform 0.8s ease;
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .img-wrap:hover img {
+            transform: scale(1.05);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--pine-rose), transparent);
+        }
+
+        .hero-logo {
+            max-width: 280px;
+            height: auto;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Superior -->
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass-nav">
+        <div class="flex flex-col">
+            <span class="text-xl font-bold tracking-tighter italic">La Casa del Piñón</span>
+            <span class="text-[8px] uppercase tracking-[0.4em] text-rose font-bold">Pinus Cembroides</span>
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a href="#inicio" class="text-[10px] uppercase tracking-widest font-semibold hover:text-rose transition-colors">Inicio</a>
+            <a href="#especie" class="text-[10px] uppercase tracking-widest font-semibold hover:text-rose transition-colors">La Especie</a>
+            <a href="#servicios" class="text-[10px] uppercase tracking-widest font-semibold hover:text-rose transition-colors">Servicios</a>
+            <a href="#contacto" class="text-[10px] uppercase tracking-widest font-semibold hover:text-rose transition-colors">Contacto</a>
+            <div class="h-4 w-[1px] bg-stone-300"></div>
+            <a href="https://www.facebook.com/profile.php?id=100086387038626" target="_blank" class="text-stone-600 hover:text-blue-600 transition-colors">
+                <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada -->
+    <header id="inicio" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-32 pb-20">
+        <!-- Logo de la empresa -->
+        <div class="mb-8 animate-fade-in">
+            <img src="Logo Rosal del pino trans.jpg" alt="Logo Rosa del Pino" class="hero-logo mx-auto">
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-light italic text-stone-400 mb-2">Una propuesta de vida</h2>
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">Pinus cembroides</h1>
+        <p class="text-sm md:text-lg font-light tracking-[0.4em] uppercase text-stone-500 mb-12">Sostenibilidad & Naturaleza</p>
+        <div class="flex flex-col md:flex-row gap-4">
+            <a href="#servicios" class="border border-stone-800 px-12 py-4 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-stone-800 hover:text-white transition-all">Explorar el Bosque</a>
+        </div>
+    </header>
+
+    <!-- Sección de la Especie -->
+    <section id="especie" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="img-wrap shadow-2xl">
+                <img src="Fachada de abobe.jpeg" alt="Arquitectura y Naturaleza">
+            </div>
+            <div class="space-y-6">
+                <span class="text-rose text-xs font-bold uppercase tracking-widest">Orgullo Mexicano</span>
+                <h2 class="text-5xl font-bold italic">La Belleza del Crecimiento Lento</h2>
+                <p class="text-stone-600 leading-relaxed text-lg italic">
+                    El *Pinus cembroides* es un símbolo de paciencia y resistencia. Con una longevidad que alcanza los 300 años, este árbol aromático es la base de un ecosistema que protegemos y compartimos.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-6">
+                    <div class="p-6 bg-white rounded-2xl border-l-4 border-rose">
+                        <p class="text-3xl font-bold italic">15 años</p>
+                        <p class="text-[10px] uppercase font-bold text-stone-400 tracking-tighter">Primer fruto</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl border-l-4 border-stone-300">
+                        <p class="text-3xl font-bold italic">300 años</p>
+                        <p class="text-[10px] uppercase font-bold text-stone-400 tracking-tighter">De vida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios y Experiencias -->
+    <section id="servicios" class="py-24 bg-stone-100 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-5xl font-bold italic mb-4">Nuestras Experiencias</h2>
+            <div class="section-divider w-24 mx-auto mb-8"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Taller -->
+            <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow group">
+                <div class="w-full h-48 mb-6 overflow-hidden rounded-xl">
+                    <img src="Piñon germinando.jpeg" alt="Talleres" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                </div>
+                <h3 class="text-2xl font-bold italic mb-4">Talleres Educativos</h3>
+                <p class="text-stone-500 text-sm mb-6">Germinación, cuidado de bonsáis y equilibrio emocional a través de la naturaleza.</p>
+                <ul class="text-xs space-y-2 text-stone-400 font-bold uppercase">
+                    <li><i class="fas fa-check text-rose mr-2"></i> Escuelas</li>
+                    <li><i class="fas fa-check text-rose mr-2"></i> Empresas</li>
+                </ul>
+            </div>
+
+            <!-- Colecta -->
+            <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow group border-2 border-rose/20">
+                <div class="w-full h-48 mb-6 overflow-hidden rounded-xl">
+                    <img src="Frutos maduros.jpg" alt="Colecta" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                </div>
+                <h3 class="text-2xl font-bold italic mb-4">Visitas Guiadas</h3>
+                <p class="text-stone-500 text-sm mb-6">Septiembre a Noviembre: Vive la colecta real del piñón en nuestro mini bosque.</p>
+                <span class="inline-block px-4 py-2 bg-rose text-white text-[9px] font-bold uppercase rounded-full">Temporada Alta</span>
+            </div>
+
+            <!-- Adopción -->
+            <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mb-6 text-rose">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="text-2xl font-bold italic mb-4">Adopta un Árbol</h3>
+                <p class="text-stone-500 text-sm mb-6">Sé parte del bosque. Recibe fotos de tu ejemplar y una placa personalizada.</p>
+                <p class="text-xs text-rose font-bold uppercase tracking-widest">Comunidad Amigos de los Pinos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="py-24 px-6 bg-stone-900 text-white text-center">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div>
+                <h2 class="text-4xl md:text-6xl font-bold italic mb-4">Conectemos</h2>
+                <div class="section-divider w-24 mx-auto opacity-20"></div>
+            </div>
+
+            <div class="flex flex-col items-center gap-10">
+                <!-- WhatsApp -->
+                <div class="group">
+                    <p class="text-stone-500 uppercase tracking-[0.3em] text-[10px] font-bold mb-4">Atención Directa</p>
+                    <a href="https://wa.me/525518261080" target="_blank" class="text-3xl md:text-5xl font-bold hover:text-rose transition-colors flex items-center justify-center gap-4">
+                        <i class="fab fa-whatsapp text-green-500"></i> 55 1826 1080
+                    </a>
+                </div>
+
+                <!-- Facebook -->
+                <div class="group">
+                    <p class="text-stone-500 uppercase tracking-[0.3em] text-[10px] font-bold mb-4">Nuestra Comunidad</p>
+                    <a href="https://www.facebook.com/profile.php?id=100086387038626" target="_blank" class="text-2xl md:text-4xl font-semibold italic hover:text-blue-400 transition-colors flex items-center justify-center gap-4">
+                        <i class="fab fa-facebook text-blue-600"></i> Piñón rosa cultivado
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-20 border-t border-white/5 text-[9px] uppercase tracking-widest text-stone-600 font-bold flex flex-col md:flex-row justify-between gap-6">
+                <span>© 2026 La Casa del Piñón</span>
+                <span>Ubicación: México</span>
+                <span>Pinus Cembroides: Un estilo de vida</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botones Flotantes -->
+    <div class="fixed bottom-8 right-8 flex flex-col gap-4 z-50">
+        <a href="https://www.facebook.com/profile.php?id=100086387038626" target="_blank" class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition-transform">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/525518261080" target="_blank" class="bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+</body>
+</html>
